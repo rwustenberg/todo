@@ -10,17 +10,18 @@
     <h1 class="title">Things to get done</h1>
     <div class="all-tasks">
       <h2 class="task-list-title">Lists</h2>
-      <ul class="task-list">
+      <ul class="task-list" data-lists>
         <li class="list-name active-list">Moving</li>
         <li class="list-name">School</li>
         <li class="list-name">Work</li>
       </ul>
 
-      <form class="" action="index.html" method="post">
+      <form class="" action="" method="post" data-new-list-form>
         <input
           type="text"
           name=""
           id=""
+          data-new-list-input
           class="new list"
           placeholder="new list name"
           aria-label="new list name"
@@ -36,13 +37,13 @@
       </form>
     </div>
 
-    <div class="todo-lists">
+    <div class="todo-lists" data-list-display-container>
       <div class="todo-header">
-        <h2 class="list-title">Moving</h2>
-        <p class="task-count">3 tasks remaining</p>
+        <h2 class="list-title" data-list-title>Moving</h2>
+        <p class="task-count" data-list-count>3 tasks remaining</p>
       </div>
       <div class="todo-body">
-        <div class="tasks">
+        <div class="tasks" data-tasks>
           <input type="checkbox" id="task-1" name="" value="" />
           <label for="task-1">
             <span class="custom-checkbox"></span>
@@ -92,7 +93,12 @@
           <button type="button" name="button" class="btn delete">
             Clear Completed Task
           </button>
-          <button type="button" name="button" class="btn delete">
+          <button
+            type="button"
+            name="button"
+            class="btn delete"
+            data-delete-list-button
+          >
             Delete List
           </button>
         </div>
