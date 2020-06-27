@@ -44,37 +44,17 @@
       </div>
       <div class="todo-body">
         <div class="tasks" data-tasks>
-          <input type="checkbox" id="task-1" name="" value="" />
-          <label for="task-1">
-            <span class="custom-checkbox"></span>
-            Get boxes</label
-          >
-        </div>
-        <!-- /task-1 -->
 
-        <div class="tasks">
-          <input type="checkbox" id="task-2" name="" value="" />
-          <label for="task-2">
-            <span class="custom-checkbox"></span>
-            sell furniture</label
-          >
         </div>
-        <!-- /task-2 -->
+    
 
-        <div class="tasks">
-          <input type="checkbox" id="task-3" name="" value="" />
-          <label for="task-3">
-            <span class="custom-checkbox"></span>
-            Pack</label
-          >
-        </div>
-        <!-- /task-3 -->
         <div class="new-task-creator">
-          <form class="" action="index.html" method="post">
+          <form class="" action="" method="post" data-new-task-form>
             <input
               type="text"
               name=""
               id=""
+							data-new-task-input
               class="new task"
               placeholder="new task name"
               aria-label="new task name"
@@ -90,7 +70,7 @@
           </form>
         </div>
         <div class="delete-task">
-          <button type="button" name="button" class="btn delete">
+          <button type="button" name="button" class="btn delete" data-clear-complete-tasks-button>
             Clear Completed Task
           </button>
           <button
@@ -104,5 +84,13 @@
         </div>
       </div>
     </div>
+		<template id='"task-template">
+        <div class="tasks" >
+          <input type="checkbox" />
+          <label >
+            <span class="custom-checkbox"></span>
+            </label>
+        </div>
+		</template>
   </body>
 </html>
